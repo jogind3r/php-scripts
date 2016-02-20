@@ -2,7 +2,7 @@
 class Db {
 ///////////////////////////////////class vars////////////////////////////////////////////
   public  static $connection;
-  private $config= array('username'=>"root",'password'=>"123",'dbname'=>"collapse");
+  private $config= array('username'=>"root",'password'=>"123",'dbname'=>"mydb");
   public  $x=0;
 /////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////member func////////////////////////////////////////
@@ -77,10 +77,10 @@ class Db {
 ////////////////////////////////////////end of class///////////////////////////////////////////
 
 // $qry="INSERT INTO `users` (`user_id`, `username`, `email`, `password`) VALUES (NULL, 'cat', 'cat@cathsstdtgthouse.com', 'cacat');";
-$qry="select * from `users` ";
-$db = new Db();
-$res = $db -> select(['num','lastid','rows'],$qry);
+// $qry="select * from `users` ";
+// $db = new Db();
+// $res = $db -> select(['num','lastid','rows'],$qry);
 
-print_r($res);
-if(!$res){print $db->error();}
+// print_r($res);
+// if(!$res){print $db->error();}
 ?>
